@@ -1,0 +1,28 @@
+<Solution>
+  <Folder Name="/k8s/">
+    <File Path="api-deployment.yml" />
+    <File Path="api-service.yml" />
+    <File Path="namespace.yml" />
+  </Folder>
+  <Folder Name="/Load Testing/" />
+  <Folder Name="/Load Testing/api/">
+    <File Path="LoadTesting/k6script/Country/GetAllCountry.js" />
+    <File Path="LoadTesting/k6script/Country/GetCountryById.js" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../MyTrade/.gitattributes" />
+    <File Path="../MyTrade/.gitignore" />
+    <File Path=".dockerignore" />
+    <File Path=".editorconfig" />
+    <File Path="docker-compose.yml" />
+    <File Path="docker.ReadMe" />
+    <File Path="Dockerfile" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/MyTrade.API/MyTrade.API.csproj" />
+    <Project Path="src/MyTrade.Application/MyTrade.Application.csproj" />
+    <Project Path="src/MyTrade.Domain/MyTrade.Domain.csproj" />
+    <Project Path="src/MyTrade.Infrastructure/MyTrade.Infrastructure.csproj" />
+  </Folder>
+</Solution>

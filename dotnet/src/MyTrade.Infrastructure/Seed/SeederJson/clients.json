@@ -1,0 +1,90 @@
+ [
+    {
+      "clientId": "CLT-001",
+      "name": "Acme Corporation",
+      "type": "Institutional",
+      "contactInfo": {
+        "email": "trading@acmecorp.com",
+        "phone": "+1-555-0100",
+        "address": {
+          "street": "123 Wall Street",
+          "city": "New York",
+          "state": "NY",
+          "country": "USA",
+          "postalCode": "10005"
+        }
+      },
+      "creditRating": "AAA",
+      "riskProfile": "Conservative",
+      "accountIds": [ "ACC-001", "ACC-002" ],
+      "status": "Active",
+      "kycStatus": "Approved",
+      "onboardingDate": "2024-01-15T00:00:00Z"
+    },
+    {
+      "clientId": "CLT-002",
+      "name": "Global Investments LLC",
+      "type": "Institutional",
+      "contactInfo": {
+        "email": "ops@globalinvest.com",
+        "phone": "+1-555-0200",
+        "address": {
+          "street": "456 Market Street",
+          "city": "San Francisco",
+          "state": "CA",
+          "country": "USA",
+          "postalCode": "94105"
+        }
+      },
+      "creditRating": "AA+",
+      "riskProfile": "Aggressive",
+      "accountIds": [ "ACC-003" ],
+      "status": "Active",
+      "kycStatus": "Approved",
+      "onboardingDate": "2024-07-10T00:00:00Z"
+    },
+    {
+      "clientId": "CLT-003",
+      "name": "Pension Fund Associates",
+      "type": "Institutional",
+      "contactInfo": {
+        "email": "trading@pensionfund.com",
+        "phone": "+1-555-0300",
+        "address": {
+          "street": "789 Michigan Avenue",
+          "city": "Chicago",
+          "state": "IL",
+          "country": "USA",
+          "postalCode": "60611"
+        }
+      },
+      "creditRating": "AAA",
+      "riskProfile": "Conservative",
+      "accountIds": [ "ACC-004" ],
+      "status": "Active",
+      "kycStatus": "Approved",
+      "onboardingDate": "2023-01-20T00:00:00Z"
+    },
+    {
+      "clientId": "CLT-004",
+      "name": "Retail Investor - David Lee",
+      "type": "Retail",
+      "contactInfo": {
+        "email": "david.lee@email.com",
+        "phone": "+1-555-0400",
+        "address": {
+          "street": "321 Oak Street",
+          "city": "Austin",
+          "state": "TX",
+          "country": "USA",
+          "postalCode": "78701"
+        }
+      },
+      "creditRating": "A",
+      "riskProfile": "Moderate",
+      "accountIds": [ "ACC-005" ],
+      "status": "Active",
+      "kycStatus": "Approved",
+      "onboardingDate": "2024-10-05T00:00:00Z"
+    }
+  ]

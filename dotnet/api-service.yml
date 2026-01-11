@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: MyTrade-dotnet-api
+spec:
+  selector:
+    app: MyTrade-dotnet-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer

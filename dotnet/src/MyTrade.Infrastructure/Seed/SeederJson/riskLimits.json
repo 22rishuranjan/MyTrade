@@ -1,0 +1,202 @@
+[
+    {
+      "limitId": "LMT-TDR-001-DAILY",
+      "entityType": "trader",
+      "entityId": "TDR-001",
+      "limitType": "DailyVolume",
+      "threshold": 10000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-TDR-001-POSITION",
+      "entityType": "trader",
+      "entityId": "TDR-001",
+      "limitType": "PositionLimit",
+      "threshold": 5000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-TDR-002-DAILY",
+      "entityType": "trader",
+      "entityId": "TDR-002",
+      "limitType": "DailyVolume",
+      "threshold": 15000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-TDR-002-POSITION",
+      "entityType": "trader",
+      "entityId": "TDR-002",
+      "limitType": "PositionLimit",
+      "threshold": 7500000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-TDR-003-DAILY",
+      "entityType": "trader",
+      "entityId": "TDR-003",
+      "limitType": "DailyVolume",
+      "threshold": 50000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-TDR-003-POSITION",
+      "entityType": "trader",
+      "entityId": "TDR-003",
+      "limitType": "PositionLimit",
+      "threshold": 25000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-CLT-001-DAILY",
+      "entityType": "client",
+      "entityId": "CLT-001",
+      "limitType": "DailyVolume",
+      "threshold": 20000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-CLT-002-DAILY",
+      "entityType": "client",
+      "entityId": "CLT-002",
+      "limitType": "DailyVolume",
+      "threshold": 30000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-CLT-003-DAILY",
+      "entityType": "client",
+      "entityId": "CLT-003",
+      "limitType": "DailyVolume",
+      "threshold": 100000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-CLT-004-DAILY",
+      "entityType": "client",
+      "entityId": "CLT-004",
+      "limitType": "DailyVolume",
+      "threshold": 1000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-001-POSITION",
+      "entityType": "account",
+      "entityId": "ACC-001",
+      "limitType": "PositionLimit",
+      "threshold": 5000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-001-EXPOSURE",
+      "entityType": "account",
+      "entityId": "ACC-001",
+      "limitType": "Exposure",
+      "threshold": 7500000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-002-POSITION",
+      "entityType": "account",
+      "entityId": "ACC-002",
+      "limitType": "PositionLimit",
+      "threshold": 2500000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-002-EXPOSURE",
+      "entityType": "account",
+      "entityId": "ACC-002",
+      "limitType": "Exposure",
+      "threshold": 3750000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-003-POSITION",
+      "entityType": "account",
+      "entityId": "ACC-003",
+      "limitType": "PositionLimit",
+      "threshold": 12500000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-003-EXPOSURE",
+      "entityType": "account",
+      "entityId": "ACC-003",
+      "limitType": "Exposure",
+      "threshold": 18750000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-004-POSITION",
+      "entityType": "account",
+      "entityId": "ACC-004",
+      "limitType": "PositionLimit",
+      "threshold": 25000000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-004-EXPOSURE",
+      "entityType": "account",
+      "entityId": "ACC-004",
+      "limitType": "Exposure",
+      "threshold": 37500000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-005-POSITION",
+      "entityType": "account",
+      "entityId": "ACC-005",
+      "limitType": "PositionLimit",
+      "threshold": 250000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    },
+    {
+      "limitId": "LMT-ACC-005-EXPOSURE",
+      "entityType": "account",
+      "entityId": "ACC-005",
+      "limitType": "Exposure",
+      "threshold": 375000,
+      "currentValue": 0,
+      "currency": "USD",
+      "breachAlert": false
+    }
+  ]

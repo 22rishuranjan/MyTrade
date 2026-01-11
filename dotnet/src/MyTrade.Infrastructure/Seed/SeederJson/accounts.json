@@ -1,0 +1,57 @@
+[
+    {
+      "accountId": "ACC-001",
+      "clientId": "CLT-001",
+      "accountType": "Margin",
+      "balance": 10000000,
+      "availableBalance": 10000000,
+      "marginUsed": 0,
+      "currency": "USD",
+      "status": "Active",
+      "positionIds": []
+    },
+    {
+      "accountId": "ACC-002",
+      "clientId": "CLT-001",
+      "accountType": "Cash",
+      "balance": 5000000,
+      "availableBalance": 5000000,
+      "marginUsed": 0,
+      "currency": "USD",
+      "status": "Active",
+      "positionIds": []
+    },
+    {
+      "accountId": "ACC-003",
+      "clientId": "CLT-002",
+      "accountType": "Margin",
+      "balance": 25000000,
+      "availableBalance": 25000000,
+      "marginUsed": 0,
+      "currency": "USD",
+      "status": "Active",
+      "positionIds": []
+    },
+    {
+      "accountId": "ACC-004",
+      "clientId": "CLT-003",
+      "accountType": "Cash",
+      "balance": 50000000,
+      "availableBalance": 50000000,
+      "marginUsed": 0,
+      "currency": "USD",
+      "status": "Active",
+      "positionIds": []
+    },
+    {
+      "accountId": "ACC-005",
+      "clientId": "CLT-004",
+      "accountType": "Cash",
+      "balance": 500000,
+      "availableBalance": 500000,
+      "marginUsed": 0,
+      "currency": "USD",
+      "status": "Active",
+      "positionIds": []
+    }
+  ]

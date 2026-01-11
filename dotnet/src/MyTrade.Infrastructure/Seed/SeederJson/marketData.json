@@ -1,0 +1,121 @@
+[
+    {
+      "symbol": "AAPL",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 175.32,
+      "ask": 175.68,
+      "last": 175.50,
+      "volume": 25430000,
+      "high": 178.91,
+      "low": 171.59,
+      "open": 174.51,
+      "source": "NASDAQ"
+    },
+    {
+      "symbol": "GOOGL",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 140.11,
+      "ask": 140.39,
+      "last": 140.25,
+      "volume": 18920000,
+      "high": 142.96,
+      "low": 137.45,
+      "open": 139.75,
+      "source": "NASDAQ"
+    },
+    {
+      "symbol": "MSFT",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 380.37,
+      "ask": 381.13,
+      "last": 380.75,
+      "volume": 32150000,
+      "high": 388.17,
+      "low": 373.14,
+      "open": 379.74,
+      "source": "NASDAQ"
+    },
+    {
+      "symbol": "TSLA",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 245.05,
+      "ask": 245.55,
+      "last": 245.30,
+      "volume": 45670000,
+      "high": 250.21,
+      "low": 240.19,
+      "source": "NASDAQ"
+    },
+    {
+      "symbol": "AMZN",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 155.64,
+      "ask": 155.96,
+      "last": 155.80,
+      "volume": 28340000,
+      "high": 158.92,
+      "low": 152.68,
+      "open": 155.29,
+      "source": "NASDAQ"
+    },
+    {
+      "symbol": "META",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 485.41,
+      "ask": 486.39,
+      "last": 485.90,
+      "volume": 19540000,
+      "high": 495.72,
+      "low": 476.08,
+      "open": 484.45,
+      "source": "NASDAQ"
+    },
+    {
+      "symbol": "NVDA",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 495.10,
+      "ask": 496.10,
+      "last": 495.60,
+      "volume": 38920000,
+      "high": 505.71,
+      "low": 485.49,
+      "open": 493.80,
+      "source": "NASDAQ"
+    },
+    {
+      "symbol": "JPM",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 195.20,
+      "ask": 195.60,
+      "last": 195.40,
+      "volume": 12340000,
+      "high": 199.31,
+      "low": 191.49,
+      "open": 194.89,
+      "source": "NYSE"
+    },
+    {
+      "symbol": "BAC",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 35.71,
+      "ask": 35.79,
+      "last": 35.75,
+      "volume": 42580000,
+      "high": 36.47,
+      "low": 35.04,
+      "open": 35.66,
+      "source": "NYSE"
+    },
+    {
+      "symbol": "GS",
+      "timestamp": "2025-01-11T10:30:00Z",
+      "bid": 449.75,
+      "ask": 450.65,
+      "last": 450.20,
+      "volume": 8750000,
+      "high": 459.20,
+      "low": 441.20,
+      "open": 448.90,
+      "source": "NYSE"
+    }
+  ]

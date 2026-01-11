@@ -1,0 +1,53 @@
+[
+  {
+    "tradeId": "TRD-0001",
+    "symbol": "AAPL",
+    "side": "BUY",
+    "quantity": 100,
+    "price": 175.50,
+    "totalValue": 17550.00,
+    "traderId": "TDR-001",
+    "clientId": "CLT-001",
+    "accountId": "ACC-001",
+    "orderType": "Limit",
+    "status": "Executed",
+    "executionTime": "2025-01-11T10:31:00Z",
+    "tradeDate": "2025-01-11T00:00:00Z",
+    "settlementDate": "2025-01-13T00:00:00Z",
+    "currency": "USD"
+  },
+  {
+    "tradeId": "TRD-0002",
+    "symbol": "MSFT",
+    "side": "SELL",
+    "quantity": 50,
+    "price": 380.75,
+    "totalValue": 19037.50,
+    "traderId": "TDR-001",
+    "clientId": "CLT-002",
+    "accountId": "ACC-003",
+    "orderType": "Market",
+    "status": "Executed",
+    "executionTime": "2025-01-11T10:35:00Z",
+    "tradeDate": "2025-01-11T00:00:00Z",
+    "settlementDate": "2025-01-13T00:00:00Z",
+    "currency": "USD"
+  },
+  {
+    "tradeId": "TRD-0003",
+    "symbol": "TSLA",
+    "side": "BUY",
+    "quantity": 25,
+    "price": 245.30,
+    "totalValue": 6132.50,
+    "traderId": "TDR-002",
+    "clientId": "CLT-004",
+    "accountId": "ACC-005",
+    "orderType": "Limit",
+    "status": "Executed",
+    "executionTime": "2025-01-11T10:40:00Z",
+    "tradeDate": "2025-01-11T00:00:00Z",
+    "settlementDate": "2025-01-13T00:00:00Z",
+    "currency": "USD"
+  }
+]
