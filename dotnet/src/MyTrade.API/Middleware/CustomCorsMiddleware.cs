@@ -24,10 +24,10 @@
 
             if (!string.IsNullOrEmpty(origin) && allowedOrigins.Contains(origin))
             {
-                context.Response.Headers.Add("Access-Control-Allow-Origin", origin);
-                context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-                context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
-                context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
+                context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
+                context.Response.Headers.Append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+                context.Response.Headers.Append("Access-Control-Allow-Headers", "Content-Type, Authorization");
+                context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
 
                 if (context.Request.Method == "OPTIONS")
                 {

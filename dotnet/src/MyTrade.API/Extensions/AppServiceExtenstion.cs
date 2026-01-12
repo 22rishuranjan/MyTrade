@@ -104,12 +104,15 @@ public static class AppServiceExtension
             .AddGraphQLServer()
             .AddQueryType(d => d.Name(OperationTypeNames.Query))
             .AddTypeExtension<TradeQueries>()
-            //.AddMutationType<Mutation>()
-            //.AddType<UploadType>()
+            .AddFiltering()
+            .AddSorting()
+            .AddProjections()
             .ModifyRequestOptions(opt =>
             {
                 opt.IncludeExceptionDetails = true;
-            });
+            })
+           .UsePersistedOperationPipeline()
+           .AddFileSystemOperationDocumentStorage("./persisted_operations");
 
         return services;
     }

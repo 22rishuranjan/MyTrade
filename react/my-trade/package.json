@@ -7,9 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "relay": "relay-compiler",
-    "relay:watch": "relay-compiler --watch"
+    "relay:watch": "relay-compiler --watch",
+    "schema:pull": "get-graphql-schema http://localhost:5000/graphql > ./graphql/schema/schema.graphql",
+    "relay:validate": "relay-compiler --validate",
+    "relay": "relay-compiler"  
   },
+
   "dependencies": {
     "axios": "^1.13.2",
     "clsx": "^2.1.1",
@@ -34,6 +37,7 @@
     "@types/react-dom": "^19",
     "@types/react-relay": "^18.2.1",
     "@types/relay-runtime": "^20.1.1",
+    "autoprefixer": "^10.4.23",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
@@ -41,10 +45,11 @@
     "eslint-plugin-prettier": "^5.5.4",
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
+    "postcss": "^8.5.6",
     "prettier": "^3.7.4",
     "relay-compiler": "^20.1.1",
     "relay-test-utils": "^20.1.1",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5"
   }
 }

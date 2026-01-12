@@ -1,0 +1,37 @@
+query DashboardContentQuery(
+  $first: Int!
+  $after: String
+) {
+  trades(first: $first, after: $after, orderBy: "executionTime_DESC") {
+    edges {
+      cursor
+      node {
+        id
+        tradeId
+        symbol
+        side
+        quantity
+        price
+        totalValue
+        traderId
+        clientId
+        accountId
+        orderType
+        status
+        executionTime
+        commission
+        fees
+        currency
+        settlementDate
+        tradeDate
+      }
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    totalCount
+  }
+}

@@ -1,12 +1,17 @@
-/** @type {import('relay-compiler').Config} */
 module.exports = {
-  src: "./src",
-  schema: "./src/graphql/schema/schema.graphql",
-  language: "typescript",
+  src: './src',
+  schema: './src/graphql/schema/schema.graphql',
+  exclude: [
+    '**/node_modules/**',
+    '**/__mocks__/**',
+    '**/__generated__/**'
+  ],
+  language: 'typescript',
+  artifactDirectory: './src/graphql/__generated__',
 
-  // IMPORTANT: keep artifacts out of Next route directories (pages/app)
-  artifactDirectory: "./src/graphql/__generated__",
-
-  // optional but nice
-  exclude: ["**/node_modules/**", "**/.next/**"],
+  // Enable persisted queries
+  persistConfig: {
+    file: './persisted_queries.json',  // Output file
+    algorithm: 'MD5',  // or 'SHA256'
+  },
 };

@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotChocolate.PersistedOperations.FileSystem" Version="15.1.11" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
@@ -24,5 +25,10 @@
   <ItemGroup>
     <Folder Include="Filters\" />
   </ItemGroup>
+
+<Target Name="GeneratePersistedOperations" BeforeTargets="Build">
+    <Message Importance="high" Text="Generating persisted GraphQL operations..." />
+    <Exec Command="node tools/gen-persisted-ops.mjs persisted_queries.json persisted_operations" />
+</Target>
 
 </Project>

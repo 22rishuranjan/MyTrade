@@ -1,5 +1,6 @@
 /**
- * @generated SignedSource<<a888986a25a43d321a6a5d111017d347>>
+ * @generated SignedSource<<d7241f66fcd74eac568937bcd929d19b>>
+ * @relayHash f12173917aba01dcfc0acd2f6a6d3c4c
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -7,6 +8,8 @@
 /* tslint:disable */
 /* eslint-disable */
 // @ts-nocheck
+
+// @relayRequestID f12173917aba01dcfc0acd2f6a6d3c4c
 
 import { ConcreteRequest } from 'relay-runtime';
 export type OrderType = "LIMIT" | "MARKET" | "STOP" | "STOP_LIMIT" | "%future added value";
@@ -320,12 +323,11 @@ return {
     "selections": (v2/*: any*/)
   },
   "params": {
-    "cacheID": "f12173917aba01dcfc0acd2f6a6d3c4c",
-    "id": null,
+    "id": "f12173917aba01dcfc0acd2f6a6d3c4c",
     "metadata": {},
     "name": "DashboardContentQuery",
     "operationKind": "query",
-    "text": "query DashboardContentQuery(\n  $first: Int!\n  $after: String\n) {\n  trades(first: $first, after: $after, orderBy: \"executionTime_DESC\") {\n    edges {\n      cursor\n      node {\n        id\n        tradeId\n        symbol\n        side\n        quantity\n        price\n        totalValue\n        traderId\n        clientId\n        accountId\n        orderType\n        status\n        executionTime\n        commission\n        fees\n        currency\n        settlementDate\n        tradeDate\n      }\n    }\n    pageInfo {\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n    }\n    totalCount\n  }\n}\n"
+    "text": null
   }
 };
 })();
