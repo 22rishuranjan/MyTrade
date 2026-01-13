@@ -1,10 +1,14 @@
-﻿using MyTrade.API.GraphQL;
-using MyTrade.Application;
-using MyTrade.Infrastructure;
+﻿using HotChocolate.AspNetCore;
+using HotChocolate.Execution;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.Extensions.DependencyInjection;
+using MyTrade.API.GraphQL;
+using MyTrade.Application;
+using MyTrade.Infrastructure;
 using System.IO.Compression;
 using System.Threading.RateLimiting;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MyTrade.Api.Extensions;
 
@@ -101,19 +105,68 @@ public static class AppServiceExtension
     public static IServiceCollection AddGraphQL(this IServiceCollection services)
     {
         services
-            .AddGraphQLServer()
-            .AddQueryType(d => d.Name(OperationTypeNames.Query))
-            .AddTypeExtension<TradeQueries>()
-            .AddFiltering()
-            .AddSorting()
-            .AddProjections()
-            .ModifyRequestOptions(opt =>
-            {
-                opt.IncludeExceptionDetails = true;
-            })
-           .UsePersistedOperationPipeline()
-           .AddFileSystemOperationDocumentStorage("./persisted_operations");
+        .AddGraphQLServer()
+        .AddQueryType(d => d.Name(OperationTypeNames.Query))
+        .AddTypeExtension<TradeQueries>()
+        .UsePersistedOperationPipeline()
+        .AddFileSystemOperationDocumentStorage("./persisted_operations")
+        .UseExceptions()
+        .UseTimeout()
+        .UseDocumentCache()
+        .UseRequest(next => context =>
+         {
+             if (IsAllowedRequest(context))
+             {
+                 return next(context);
+             }
+
+             var error = ErrorBuilder.New()
+                 .SetMessage("only persisted operations!")
+                 .Build();
+
+             context.Result = OperationResultBuilder.CreateError(error);
+             return default;
+         })
+        .AddHttpRequestInterceptor<CustomRequestInterceptor>();
+
+
 
         return services;
     }
+
+    public class CustomRequestInterceptor : DefaultHttpRequestInterceptor
+    {
+        public override ValueTask OnCreateAsync(
+            HttpContext context,
+            IRequestExecutor requestExecutor,
+            OperationRequestBuilder requestBuilder,
+            CancellationToken cancellationToken)
+        {
+            if (context.Request.Headers.ContainsKey("admin"))
+            {
+                requestBuilder.SetGlobalState("admin", true);
+            }
+
+            return default;
+        }
+    }
+
+    static bool IsAllowedRequest(IRequestContext context)
+    {
+        var isAdmin = context.ContextData.ContainsKey("admin");
+
+        var hasInlineDocument = context.Request.Document is not null;
+
+        var hasPersistedDocument =
+            context.IsPersistedDocument ||
+            context.IsCachedDocument;
+
+        // Allow:
+        // - admin requests
+        // - persisted/cached operations without inline documents
+        return isAdmin || (!hasInlineDocument && hasPersistedDocument);
+    }
 }
+
+
+

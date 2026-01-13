@@ -54,9 +54,6 @@ public class Program
 
         app.AddAppMiddleware();
         app.Logger.LogInformation("Middleware configured.");
-      
-
-
 
         app.Logger.LogInformation("Starting the application...");
         await app.RunAsync();
